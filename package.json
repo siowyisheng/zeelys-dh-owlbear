@@ -1,0 +1,45 @@
+{
+  "name": "daggerheart-table-companion",
+  "version": "1.0.0",
+  "description": "An accessible Daggerheart table companion for Owlbear Rodeo",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc -b && vite build",
+    "typecheck": "tsc -b --pretty false",
+    "lint": "eslint ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/siowyisheng/zeelys-dh-owlbear.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "GPL-3.0-only",
+  "bugs": {
+    "url": "https://github.com/siowyisheng/zeelys-dh-owlbear/issues"
+  },
+  "homepage": "https://github.com/siowyisheng/zeelys-dh-owlbear#readme",
+  "overrides": {
+    "uuid": "^13.0.0"
+  },
+  "dependencies": {
+    "@owlbear-rodeo/sdk": "^3.1.0",
+    "lucide-react": "^1.66.0",
+    "react": "^19.3.1",
+    "react-dom": "^19.3.1"
+  },
+  "devDependencies": {
+    "@eslint/js": "^10.0.1",
+    "@types/react": "^19.3.0",
+    "@types/react-dom": "^19.3.0",
+    "@vitejs/plugin-react": "^6.2.1",
+    "eslint": "^10.14.0",
+    "eslint-plugin-react-hooks": "^7.1.1",
+    "eslint-plugin-react-refresh": "^0.5.7",
+    "typescript": "^5.9.3",
+    "typescript-eslint": "^8.72.1",
+    "vite": "^8.3.5"
+  }
+}
