@@ -4,13 +4,13 @@
   "manifest_version": 1,
   "description": "Stats, Duality Dice, Fear, countdowns, and spotlight for Daggerheart tables.",
   "author": "Daggerheart Table Companion contributors",
-  "icon": "/icon.svg",
+  "icon": "https://siowyisheng.github.io/zeelys-dh-owlbear/icon.svg",
   "action": {
     "title": "Daggerheart Table Companion",
-    "icon": "/icon.svg",
-    "popover": "/index.html",
+    "icon": "https://siowyisheng.github.io/zeelys-dh-owlbear/icon.svg",
+    "popover": "https://siowyisheng.github.io/zeelys-dh-owlbear/index.html",
     "width": 420,
     "height": 720
   },
-  "background_url": "/background.html"
+  "background_url": "https://siowyisheng.github.io/zeelys-dh-owlbear/background.html"
 }
