@@ -19,6 +19,7 @@ import {
   type SceneState,
   type UiMessage,
 } from "./types";
+import { extensionUrl } from "./urls";
 
 const AUTHORITY_TTL = 20_000;
 const HEARTBEAT_INTERVAL = 8_000;
@@ -184,7 +185,7 @@ async function returnDisconnectedSpotlight() {
 }
 
 async function configureContextMenus() {
-  const icon = new URL("/icon.svg", window.location.origin).toString();
+  const icon = extensionUrl("icon.svg");
   const openItem = async (
     item: Item | undefined,
     pendingAction: "MANAGE" | "ASSIGN" | "UNTRACK" | "ROLL",
@@ -291,7 +292,7 @@ async function syncOverlay() {
   if (!sceneReady || !preferences.overlayEnabled) return;
   await OBR.popover.open({
     id: OVERLAY_ID,
-    url: new URL("/overlay.html", window.location.origin).toString(),
+    url: extensionUrl("overlay.html"),
     width: preferences.overlayWidth,
     height: preferences.overlayHeight,
     anchorReference: "POSITION",
